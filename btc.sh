@@ -1,6 +1,6 @@
 market=bitstampbtcusd
 
-source ma5-script.sh
+source ma-script.sh
 
 
 

@@ -87,17 +87,17 @@ for i in range(len(times)):
         asset = cny * (1 - fee)
         cny = 0
 
-        print(str_time + "买入, 价格: " + str(buy_price) + ", 当前资产: " + str(asset))
+        print('' + str_time + "买入, 价格: " + str(buy_price) + ", 当前资产: " + str(asset))
 
     if ma_line[prev_time] > pre_price and coins > 0: # 如果跌破均线，且还有币，则卖出
         cny = (1 - fee) * coins * sell_price
         asset = cny
         coins = 0
 
-        print(str_time + "卖出, 价格: " + str(sell_price) + ", 当前资产: " + str(asset))
+        print('' + str_time + "卖出, 价格: " + str(sell_price) + ", 当前资产: " + str(asset))
 
 
 #####################打印资产#####################
 asset = cny + coins * pre_price
 
-print('\n最新价格: ' + str(pre_price) + ', 最初资产: ' + str(init_asset) + ', 当前资产: ' + str(asset))
+print('\n最新价格: ' + str(pre_price) + ', 最初资产: ' + str(init_asset) + ', 最终资产: ' + str(asset))
