@@ -1,0 +1,26 @@
+#ignore files
+.settings
+.classpath
+.project
+.tomcatplugin
+target
+work
+.tomcatplugin
+*.log
+.idea
+*.iml
+*.zip
+*.tar.gz
+configure.properties
+autocoin.db
+autocoin.db-journal
+logs
+.DS_Store
+!deploy.sh.example
+*_stop_loss_limit
+deploy_script
+deploy_script/*
+src/main/resources/autocoin_handler.sh
+classes/
+tmp/
+autocoin/src/main/resources/robots
